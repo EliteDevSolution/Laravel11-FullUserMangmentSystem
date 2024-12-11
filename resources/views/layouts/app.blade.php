@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @include('partials.head')
+        @stack('css')
+    </head>
+    <body>
+        <!-- Pre-loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">{{  __('global.loading') }}...</div>
+            </div>
+        </div>
+        <!-- End Preloader-->
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+              @include('partials.topbar')
+            </div>
+            <!-- end Topbar -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left-side-menu">
+
+                <div class="slimscroll-menu">
+                    <!--- Sidemenu -->
+                    @include('partials.menubar')
+                    <!-- End Sidebar -->
+                    <div class="clearfix"></div>
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                      @yield('content')
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                  @include('partials.footerbar')
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <a href="#" class="scrollToTop"><i class="fe-chevron-up"></i></a>
+        <!-- END wrapper -->
+
+        <form id="logoutform" action="{{ route('logout')}}" method="POST" class="d-none">
+            {{ csrf_field() }}
+        </form>
+
+    <!-- Js container -->
+        @include('partials.js')
+
+    </body>
+</html>

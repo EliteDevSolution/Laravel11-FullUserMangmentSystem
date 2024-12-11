@@ -1,0 +1,191 @@
+@page {
+    size: A4;
+    margin: 0;
+    padding: 0;
+    /*background: url('/public/images/invoice/bg.png') no-repeat center center fixed;*/
+}
+body {
+    margin-top: 3cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-bottom: 3cm;
+}
+
+/** Define the header rules **/
+header {
+    position: fixed;
+    top: 2cm;
+    left: 0cm;
+    right: 0cm;
+    height: 2cm;
+}
+.print-content
+{
+    margin-top: 4.82cm;
+}
+
+/** Define the footer rules **/
+footer {
+    position: fixed;
+    bottom: 3cm;
+    left: 1cm;
+    right: 1cm;
+    height: 4cm;
+}
+
+tr td {
+    border: 1px solid #717376;
+    border-collapse: collapse;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 8px;
+    padding-right: 5px;
+    font-size: 13px;
+}
+th{
+    border: 1px solid #717376;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    height: 25px;
+    padding-left: 8px;
+    padding-right: 5px;
+    font-size: 13px;
+}
+.tbl{
+    border-collapse: collapse;
+    font-size: 15px;
+}
+.tbl-1{
+    margin: 50px auto 20px auto;
+}
+.tbl-2{
+    margin: auto auto 20px auto;
+}
+.tbl-3{
+    margin: auto auto 20px auto;
+}
+.tbl-3 tr th{
+    width: 25%;
+}
+.tbl-4{
+    margin: auto auto 20px auto;
+}
+.tbl-4 tr th{
+    text-align: center;
+    vertical-align: middle;
+}
+.tbl-4 tr td{
+    text-align: center;
+    vertical-align: middle;
+}
+.tbl-5{
+    margin: auto auto 20px auto;
+}
+.tbl-5 tr th{
+    text-align: center;
+    vertical-align: middle;
+    width: 19%;
+}
+.tbl-5 tr td{
+    text-align: center;
+    vertical-align: middle;
+}
+#final-amount td{
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+.comment {
+    height: 30px;
+    vertical-align: middle;
+    text-align: left !important;
+}
+.tbl-final{
+    margin: auto auto 50px auto;
+    border: 1px solid #717376;
+}
+.tbl-final tr td{
+    border:none;
+    vertical-align: middle;
+}
+.tbl-final-mark{
+    text-align: center;
+}
+.container{
+    border: 1px solid #717376;
+    background-image: url("/public/images/invoice/footer.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+.center{
+    margin: auto;
+}
+.w-8 {
+    width: 80%;
+}
+.n-bd-t{
+    border-top: none;
+}
+.n-bd-l{
+    border-left: none;
+}
+.n-bd-r{
+    border-right: none;
+}
+.n-bd-b{
+    border-bottom: none;
+}
+.f-t{
+    font-size: 25px;
+    text-align: center;
+}
+.f-h{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#qandatbl_onthefly_container
+{
+    overflow: hidden;
+    margin-left: auto;
+
+
+}
+
+#qandatbl_onthefly
+{
+    clear:both;
+    margin-left: auto;
+    overflow:auto;
+    margin-top: 30px;
+}
+
+#qandatbl, #qandatbl_onthefly{
+    border:1px black solid;
+    border-collapse:collapse;
+    table-layout:fixed;
+    width:100%;
+    clear:both;
+}
+
+
+
+#qandatbl td {
+    vertical-align: middle;
+}
+
+#qandatbl th{
+    border:1px black solid;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+
+#qandatbl_onthefly td{
+    border:1px black solid;
+    border-collapse:collapse;
+}
